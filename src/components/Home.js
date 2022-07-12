@@ -1,5 +1,15 @@
 import React from "react";
+import { Feed } from "./Feed/Feed";
+import { Head } from "./Helpers/Head";
 
 export const Home = () => {
-  return <div>Home</div>;
+  return (
+    <section className="container mainContainer">
+      <Head
+        title="Fotos"
+        description="Home do site dogs, com o feed de fotos"
+      />
+      <Feed />
+    </section>
+  );
 };
